@@ -7,7 +7,7 @@ function angkaPalindrome(num) {
     }
 
 }
-// // }
+ // }
 angkaPalindrome(14); // 9
 angkaPalindrome(5808); // 11
 angkaPalindrome(600); // 121

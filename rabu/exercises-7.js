@@ -1,11 +1,11 @@
 function hitungJumlahKata(kalimat) {
     // you can only write your code here!
-    var temp = ''
+    var temp = '';
     for (var i = 0; i <= kalimat.length - 1; i++) {
-        temp = kalimat.split(" ")
+        temp = kalimat.split(" ");
 
     }
-    return temp.length
+    return temp.length;
 }
 
 // TEST CASES

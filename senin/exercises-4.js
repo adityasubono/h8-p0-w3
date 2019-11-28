@@ -1,3 +1,5 @@
+// -- exercises-4.js --
+/* jshint undef: true, unused: true  */
 function dataHandling2(input) {
 
     input.splice(1, 2, 'Roman Alamsyah Elsharawy', 'Provinsi Bandar Lampung')
@@ -50,6 +52,8 @@ function dataHandling2(input) {
             case '12':
                 bulan = 'Desember';
                 break;
+            default:
+                break;
 
         }
 
@@ -59,7 +63,6 @@ function dataHandling2(input) {
     //console.log(input.slice(1, 2))
     var s = input.slice(1, 2);
     var x = s.toString();
-    var j = x.substr(0, 15);
 
     console.log(x.substr(0, 15));
 }

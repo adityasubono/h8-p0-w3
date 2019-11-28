@@ -1,10 +1,10 @@
 function pasanganTerbesar(num) {
     // you can only write your code here!
-    var arr = num.toString()
-    var terbesar = '0'
+    var arr = num.toString();
+    var terbesar = '0';
     for (var i = 0; i < arr.length; i++) {
         if (terbesar < arr[i] + arr[i + 1]) {
-            terbesar = arr[i] + arr[i + 1]
+            terbesar = arr[i] + arr[i + 1];
         }
     }
     return terbesar;
