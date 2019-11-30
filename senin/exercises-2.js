@@ -8,4 +8,4 @@ function balikKata(kata) {
 }
 
 // TEST CASES
-console.log(balikKata('Hello World !')); // sredoC dna dlroW olleH
+console.log(balikKata('Hello World !')); // !dlrow olleh

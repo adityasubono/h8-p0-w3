@@ -1,15 +1,18 @@
 function angkaPalindrome(num) {
-    for (i = 0; i < num * 2; i++) {
-        if (num + "" == (num + "").split("").reverse().join("")) {
-            return console.log(num);
+    var angka = num + 1;
+    var reverse = '';
+    while (true) {
+        var i = String(angka);
+        reverse = i.split('').reverse().join('');
+        if (angka === Number(reverse)) {
+            return angka;
         }
-        num++
+        angka++;
     }
-
 }
- // }
-angkaPalindrome(14); // 9
-angkaPalindrome(5808); // 11
-angkaPalindrome(600); // 121
-angkaPalindrome(599); // 181
-angkaPalindrome(569); // 1001
+
+console.log(angkaPalindrome(8)); // 9
+console.log(angkaPalindrome(10)); // 11
+console.log(angkaPalindrome(117)); // 121
+console.log(angkaPalindrome(175)); // 181
+console.log(angkaPalindrome(1000)); // 1001

@@ -1,16 +1,18 @@
 function palindrome(kata) {
-    var trimedStr = kata.replace(/\s/g, '');
-    if (trimedStr == trimedStr.split('').reverse().join('')) {
-        return true;
-    } else {
-        return false;
+    // you can only write your code here!
+    var tamp = ''
+    for (var i = kata.length - 1; i >= 0; i--) {
+        tamp += kata[i];
     }
-    // code goes here
-    return kata;
-
+    if (kata == tamp) {
+        console.log('true')
+    } else {
+        console.log('false')
+    }
 }
-console.log(palindrome('katak')); // true
-console.log(palindrome('blanket')); // false
-console.log(palindrome('civic')); // true
-console.log(palindrome('kasur rusak')); // true
-console.log(palindrome('mister')); // false
+// TEST CASES
+palindrome('katak'); // true
+palindrome('blanket'); // false
+palindrome('civic'); // true
+palindrome('kasur rusak'); // true
+palindrome('mister'); // false

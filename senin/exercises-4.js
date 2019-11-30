@@ -53,6 +53,7 @@ function dataHandling2(input) {
                 bulan = 'Desember';
                 break;
             default:
+                bulan = 'Bulan Tidak Ada';
                 break;
 
         }
