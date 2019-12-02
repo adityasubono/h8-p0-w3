@@ -1,14 +1,22 @@
 function tentukanDeretAritmatika(arr) {
-    var int = arr.slice(-1).pop() - arr.slice(-2, -1).pop();
-    var res = true;
-
-    for (var i = arr.length - 1; i > 0; i--) {
-        if (int !== (arr[i] - arr[i - 1])) {
-            res = false;
+    // you can only write your code here!
+    var temp = 0;
+    var patokan = arr[1] - arr[0];
+    var a
+    //console.log(patokan)
+    for (var i = 0; i < arr.length - 1; i++) {
+        temp = arr[i + 1] - arr[i]
+        if (patokan == temp) {
+            //console.log('true', patokan, temp);
+            a = true;
+        } else {
+            a = false;
+            // console.log('false', patokan, temp);
+            break;
         }
-    }
 
-    return res;
+    }
+    return a
 }
 
 // TEST CASES

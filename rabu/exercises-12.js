@@ -1,16 +1,19 @@
 function tentukanDeretGeometri(arr) {
     // you can only write your code here!
-    var selisih = [];
-    var benar = 0;
-    if (arr[0] < arr[1]) {
-        for (var a = 0; a < (arr.length - 1); a++) {
-            selisih += arr[a + 1] / arr[a];
-            if (selisih.length > 1 && selisih[a] === selisih[a - 1]) {
-                benar += 1;
-            }
+    var patokan = arr[1] / arr[0]
+    var tamp = 0;
+    var a
+    for (var i = 0; i < arr.length - 1; i++) {
+        if (arr[i + 1] / arr[i] === patokan) {
+            a = true;
+            //console.log('true',arr[i+1],'/',arr[i],'===', patokan)
+        } else {
+            //console.log('false',arr[i+1],'/',arr[i],'===', patokan)
+            a = false;
+            break;
         }
-        return benar === (selisih.length - 1);
     }
+    return a
 }
 
 // TEST CASES

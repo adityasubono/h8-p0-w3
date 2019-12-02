@@ -53,7 +53,7 @@ function dataHandling2(input) {
                 bulan = 'Desember';
                 break;
             default:
-                bulan = 'Bulan Tidak Ada';
+                console.log('Bulan Tidak Ada');
                 break;
 
         }
