@@ -2,15 +2,11 @@ function dataHandling(data) {
     for (var i = 0; i < data.length; i++) {
         for (var j = 0; j < data[i].length; j++) {
 
-            console.log("Nomor ID :" + data[i][j]);
-            j++;
-            console.log("Nama     :" + data[i][j]);
-            j++;
-            console.log("Alamat   :" + data[i][j]);
-            j++;
-            console.log("TTL      :" + data[i][j]);
-            j++;
-            console.log("Hobi     :" + data[i][j]);
+            console.log("Nomor ID :" + data[i][0]);
+            console.log("Nama     :" + data[i][1]);
+            console.log("Alamat   :" + data[i][2]);
+            console.log("TTL      :" + data[i][3]);
+            console.log("Hobi     :" + data[i][4]);
             console.log("");
         }
     }
